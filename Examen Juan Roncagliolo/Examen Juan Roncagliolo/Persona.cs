@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Examen_Juan_Roncagliolo
 {
-    public class Persona
+    public abstract class Persona
     {
         public string Nombre;
         public int Edad;

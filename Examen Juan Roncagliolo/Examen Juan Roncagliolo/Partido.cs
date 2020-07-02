@@ -78,7 +78,7 @@ namespace Examen_Juan_Roncagliolo
             {
                 equipo.Jugadores_en_cancha[jugador].Lesion = true;
                 Console.WriteLine("Pero que dura entrada señoras y señores el jugador " + equipo.Jugadores_en_cancha[jugador].Nombre + " tendra que dejar el campo de juego.");
-                equipo.Jugadores_en_cancha[jugador].Avisar_lecion(equipo,equipo.Medico,equipo.Entrenador,random_lesion,jugador);
+                equipo.Jugadores_en_cancha[jugador].Avisar_lesion(equipo,equipo.Medico,equipo.Entrenador,random_lesion,jugador);
                 
             }
             

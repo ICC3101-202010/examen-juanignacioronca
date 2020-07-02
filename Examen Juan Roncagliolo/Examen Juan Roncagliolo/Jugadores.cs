@@ -25,7 +25,7 @@ namespace Examen_Juan_Roncagliolo
             Es_arquero = es_arquero;
             Numero_de_camiseta = numero_de_camiseta;
         }
-        public void Avisar_lecion(Equipo equipo, Medico medico,Entrenador entrenador,double factor,int jugador)
+        public void Avisar_lesion(Equipo equipo, Medico medico,Entrenador entrenador,double factor,int jugador)
         {
             if (Lesion ==true)
             {
