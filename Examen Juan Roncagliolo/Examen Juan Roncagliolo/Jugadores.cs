@@ -29,7 +29,7 @@ namespace Examen_Juan_Roncagliolo
         {
             if (Lesion ==true)
             {
-                medico.Evaluar(factor,entrenador,jugador,equipo);
+                medico.Evaluar(equipo,factor, entrenador,jugador);
             } 
         }
         public string Infomacion()
@@ -39,7 +39,7 @@ namespace Examen_Juan_Roncagliolo
             { 
                 a+="Arquero"; 
             }
-            a+= " |" +Numero_de_camiseta;
+            a+= " |" +Numero_de_camiseta+"\n";
             return a;
         }
     }

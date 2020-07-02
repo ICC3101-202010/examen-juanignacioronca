@@ -11,12 +11,12 @@ namespace Examen_Juan_Roncagliolo
         public string Nombre;
         public string Nacion;
         public bool Es_liga;
-        public Jugadores[] Jugadores = new Jugadores[15];
-        public Jugadores[] Jugadores_en_cancha = new Jugadores[11];
+        public List<Jugadores> Jugadores = new List<Jugadores>();
+        public List<Jugadores> Jugadores_en_cancha = new List<Jugadores>();
         public Medico Medico;
         public Entrenador Entrenador;
 
-        public Equipo(string nombre, string nacion, bool es_liga, Jugadores[] jugadores, Medico medico, Entrenador entrenador)
+        public Equipo(string nombre, string nacion, bool es_liga, List<Jugadores> jugadores, Medico medico, Entrenador entrenador)
         {
             if (es_liga == true)
             {
@@ -29,7 +29,6 @@ namespace Examen_Juan_Roncagliolo
                 {
                     if (item.Nacion == nacion)
                     {
-                        Jugadores[i] = jugadores[i];
                         i++;
                     }
                     else
@@ -38,8 +37,12 @@ namespace Examen_Juan_Roncagliolo
                     }
 
                 }
+                Jugadores=jugadores;
             }
-
+            for (int i = 0; i < 11; i++)
+            {
+                Jugadores_en_cancha.Add(jugadores[i]);
+            }
             Nombre = nombre;
             Nacion = nacion;
             Es_liga = es_liga;
