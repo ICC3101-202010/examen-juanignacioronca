@@ -64,6 +64,7 @@ namespace Examen_Juan_Roncagliolo
             Lista_Jugadores.Add(Erick_Pulgar);
             Lista_Jugadores.Add(Jose_Pedro_Fuezalida);
             
+
             Equipo Seleccion_Chilena = new Equipo("Seleccion Chilena 1", "Chile", false,temp, Fernando_Yanez, Reinaldo_Rueda);
             Equipo Seleccion_Chilena2 = new Equipo("Seleccion Chilena 2", "Chile", false, temp, Fernando_Yanez, Reinaldo_Rueda);
             Equipo Seleccion_ChilenaLiga = new Equipo("Seleccion Chilena Liga 1", "Chile", true, temp, Fernando_Yanez, Reinaldo_Rueda);
