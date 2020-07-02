@@ -64,10 +64,14 @@ namespace Examen_Juan_Roncagliolo
             Lista_Jugadores.Add(Erick_Pulgar);
             Lista_Jugadores.Add(Jose_Pedro_Fuezalida);
             
-            Equipo Seleccion_Chilena = new Equipo("Seleccion Chilena", "Chile", false,temp, Fernando_Yanez, Reinaldo_Rueda);
+            Equipo Seleccion_Chilena = new Equipo("Seleccion Chilena 1", "Chile", false,temp, Fernando_Yanez, Reinaldo_Rueda);
             Equipo Seleccion_Chilena2 = new Equipo("Seleccion Chilena 2", "Chile", false, temp, Fernando_Yanez, Reinaldo_Rueda);
+            Equipo Seleccion_ChilenaLiga = new Equipo("Seleccion Chilena Liga 1", "Chile", true, temp, Fernando_Yanez, Reinaldo_Rueda);
+            Equipo Seleccion_ChilenaLiga2 = new Equipo("Seleccion Chilena Liga 2", "Chile", true, temp, Fernando_Yanez, Reinaldo_Rueda);
             Lista_Equipos.Add(Seleccion_Chilena);
             Lista_Equipos.Add(Seleccion_Chilena2);
+            Lista_Equipos.Add(Seleccion_ChilenaLiga);
+            Lista_Equipos.Add(Seleccion_ChilenaLiga2);
 
             int a = -1;
             while (a!=0)
@@ -97,11 +101,12 @@ namespace Examen_Juan_Roncagliolo
                     }
                     
                 }
+                //En Informacion se puede ver si un equipo es de liga o no, y la informacion de los jugadores de dichos equipos.
                 else if (a==2)
                 {
                     foreach (var item in Lista_Equipos)
                     {
-                        Console.WriteLine(item.Informacion());
+                        Console.WriteLine(item.Informacion()+"\n\n");
                     }
 
                 }

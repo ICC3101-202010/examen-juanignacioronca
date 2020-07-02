@@ -69,7 +69,7 @@ namespace Examen_Juan_Roncagliolo
             }
             else
             {
-                Console.WriteLine("Partido Invalido, intente nuevamente");
+                Console.WriteLine("Partido invalido no puede jugar un equipo de pais contra uno de liga, intente nuevamente");
             }
         }
         public static void Lesionar(Equipo equipo,int jugador, double factor_lesion, double random_lesion)

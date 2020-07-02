@@ -39,6 +39,10 @@ namespace Examen_Juan_Roncagliolo
                 }
                 Jugadores=jugadores;
             }
+            else
+            {
+                Jugadores = jugadores;
+            }
             for (int i = 0; i < 11; i++)
             {
                 Jugadores_en_cancha.Add(jugadores[i]);
@@ -54,13 +58,14 @@ namespace Examen_Juan_Roncagliolo
             string a = Nombre + " |" + Nacion + " |";
             if (Es_liga)
             {
-                a += "Liga";
+                a += "Liga 1| ";
             }
+            a += "\n";
             foreach (var item in Jugadores)
             {
                 a+= item.Infomacion();
             }
-            a += Medico.Informacion();
+            a += Medico.Informacion()+"\n";
             a += Entrenador.Informacion();
             return a;
         }
